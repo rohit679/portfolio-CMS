@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import createError from 'http-errors-lite';
 import { StatusCodes } from 'http-status-codes';
+import path from 'path';
 import cors from 'cors';
 
 export const createAnApp = () => {
@@ -14,6 +15,13 @@ export const createAnApp = () => {
         method : 'GET, PUT, DELETE, POST'
     }));
     app.use(express.static(__dirname + '/public'));
+    app.set('views', path.join(__dirname, './views'));
+    app.set('view engine', 'ejs');
+    app.use('/css',express.static(__dirname+'/public/css'));
+    app.use('/scripts',express.static(__dirname+'/public/scripts'));
+    app.use('/images',express.static(__dirname+'/public/images'));
+    app.use('/js',express.static(__dirname+'/public/js'));
+    app.use('/styles',express.static(__dirname+'/public/styles'));
     return app;
 };
 
