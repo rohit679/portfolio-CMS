@@ -1,9 +1,12 @@
 import { createAnApp, finishApp } from './app';
 import './modules/db/connection';
+import contentModule from './modules/contents';
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
 const app = createAnApp();
+
+contentModule.init(app);
 
 finishApp(app);
 

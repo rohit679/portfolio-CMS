@@ -1,4 +1,4 @@
-export default httpHandler = (asyncFn) => {
+export const httpHandler = (asyncFn) => {
     return (req, res, next) => {
         (async () =>{
             try {
