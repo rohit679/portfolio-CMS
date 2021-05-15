@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rohit Prasad</title>
+    <title><%= tabTitle%></title>
     <meta name="description" content="Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skils and experience."/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -22,13 +22,13 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#project">Projects</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#Achievements">Achievements</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about"><%= navBar1%></a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill"><%= navBar2%></a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience"><%= navBar3%></a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#education"><%= navBar4%></a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#project"><%= navBar5%></a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#Achievements"><%= navBar6%></a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact"><%= navBar7%></a></li>
               </ul>
             </div>
           </div>
@@ -44,18 +44,18 @@
       <div class="container">
         <div class="content-center">
           <div class="cc-profile-image"><a href="#"><img src="images/rohit.jpg" alt="Image"/></a></div>
-          <div class="h2 title">Rohit Prasad</div>
-          <p class="category text-white">CSE UNDERGRADUATE AT AMRITSAR GROUP OF COLLEGES|SOFTWARE DEVELOPER</p>
-          <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contact</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+          <div class="h2 title"><%= bannerName%></div>
+          <p class="category text-white"><%= bannerHeading%></p>
+          <a class="btn btn-primary smooth-scroll mr-2" href="<%= bannerButton1Link%>" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><%= bannerButton1%></a><a class="btn btn-primary" href="<%= bannerButton2Link%>" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><%= bannerButton2%></a>
         </div>
       </div>
       <div class="section">
         <div class="container">
           <div class="button-container">
-            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://leetcode.com/rohit221/" rel="tooltip" title="leetcode"><i class="fa fa-fw fa-code"></i></a> 
-            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/rohpr/" rel="tooltip" title="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/profile.php?id=100024163479349" rel="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a>
-            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/rohit679" rel="tooltip" title="github"><i class="fa fa-github"></i></a></div>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="<%= socialMedia1Link%>" rel="tooltip" title="<%= socialMedia1Heading%>"><i class="<%= socialMedia1Class%>"></i></a> 
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="<%= socialMedia2Link%>" rel="tooltip" title="<%= socialMedia2Heading%>"><i class="<%= socialMedia2Class%>"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="<%= socialMedia3Link%>" rel="tooltip" title="<%= socialMedia3Heading%>"><i class="<%= socialMedia3Class%>"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="<%= socialMedia4Link%>" rel="tooltip" title="<%= socialMedia4Heading%>"><i class="<%= socialMedia4Class%>"></i></a></div>
         </div>
       </div>
     </div>
@@ -67,37 +67,37 @@
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
-            <div class="h4 mt-0 title">About</div>
-            <p>Hello! I am Rohit Prasad, a third year Undergraduate pursuing B.Tech in Computer Science from Amritsar Group of Colleges.</p>
-            <p>I am a fresher with skillsets python,c++,mysql,django,hadoop and javaScript.I am curently doing an internship for notchup as a curriculum developer for python.I am having quick learning ability with new environments with optimistic solving approach.</p>
+            <div class="h4 mt-0 title"><%= div1Heading1%></div>
+            <p><%= div1Para1%></p>
+            <p><%= div1Para2%></p>
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
+            <div class="h4 mt-0 title"><%= div1Heading2%></div>
             <div class="row">
-              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">21</div>
+              <div class="col-sm-4"><strong class="text-uppercase"><%= div1List1Heading%></strong></div>
+              <div class="col-sm-8"><%= div1List1Value%></div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">rohitprasad25061999@gmail.com</div>
+              <div class="col-sm-4"><strong class="text-uppercase"><%= div1List2Heading%></strong></div>
+              <div class="col-sm-8"><%= div1List2Value%></div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-              <div class="col-sm-8">+91 9123746914</div>
+              <div class="col-sm-4"><strong class="text-uppercase"><%= div1List3Heading%></strong></div>
+              <div class="col-sm-8"><%= div1List3Value%></div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-              <div class="col-sm-8">English,Hindi,Bengali</div>
+              <div class="col-sm-4"><strong class="text-uppercase"><%= div1List4Heading%></strong></div>
+              <div class="col-sm-8"><%= div1List4Value%></div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Hobby:</strong></div>
-              <div class="col-sm-8">ABC</div>
+              <div class="col-sm-4"><strong class="text-uppercase"><%= div1List5Heading%></strong></div>
+              <div class="col-sm-8"><%= div1List5Value%></div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-              <div class="col-sm-8">ABC</div>
+              <div class="col-sm-4"><strong class="text-uppercase"><%= div1List6Heading%></strong></div>
+              <div class="col-sm-8"><%= div1List6Value%></div>
             </div>
           </div>
         </div>
@@ -107,53 +107,53 @@
 </div>
 <div class="section" id="skill">
   <div class="container">
-    <div class="h4 text-center mb-4 title">Professional Skills</div>
+    <div class="h4 text-center mb-4 title"><%= div2Heading%></div>
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div class="card-body">
         <div class="row">
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">React</span>
+            <div class="progress-container progress-primary"><span class="progress-badge"><%= div2List1Heading%></span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '<%= div2List1Percent%>';"></div><span class="progress-value"><%= div2List1Percent%></span>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">NodeJS</span>
+            <div class="progress-container progress-primary"><span class="progress-badge"><%= div2List2Heading%></span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Python</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">C++</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '<%= div2List2Percent%>';"></div><span class="progress-value"><%= div2List2Percent%></span>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">MongoDB</span>
+            <div class="progress-container progress-primary"><span class="progress-badge"><%= div2List3Heading%></span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '<%= div2List3Percent%>';"></div><span class="progress-value"><%= div2List3Percent%></span>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Git</span>
+            <div class="progress-container progress-primary"><span class="progress-badge"><%= div2List4Heading%></span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">65%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '<%= div2List4Percent%>';"></div><span class="progress-value"><%= div2List4Percent%></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><%= div2List5Heading%></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '<%= div2List5Percent%>';"></div><span class="progress-value"><%= div2List5Percent%></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><%= div2List6Heading%></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '<%= div2List6Percent%>';"></div><span class="progress-value"><%= div2List6Percent%></span>
               </div>
             </div>
           </div>
@@ -164,19 +164,19 @@
 </div>
 <div class="section" id="experience">
   <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience</div>
+    <div class="h4 text-center mb-4 title"><%= div3Heading%></div>
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>February 2020 - Present</p>
-            <div class="h5">Notchup</div>
+            <p><%= div3List1LeftDate%></p>
+            <div class="h5"><%= div3List1LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Curriculum Developer,Intern</div>
-            <p><ul><li>I am Working as a curriculum developer.</li><li>      Currently working on python.</li></ul></p>
+            <div class="h5"><%= div3List1RightHeading%></div>
+            <p><ul><li><%= div3List1RightPara1%></li><li><%= div3List1RightPara2%></li><li><%= div3List1RightPara3%></li></ul></p>
           </div>
         </div>
       </div>
@@ -185,14 +185,14 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>February 2020 - Present</p>
-            <div class="h5">Notchup</div>
+            <p><%= div3List2LeftDate%></p>
+            <div class="h5"><%= div3List2LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Curriculum Developer,Intern</div>
-            <p><ul><li>I am Working as a curriculum developer.</li><li>      Currently working on python.</li></ul></p>
+            <div class="h5"><%= div3List2RightHeading%></div>
+            <p><ul><li><%= div3List2RightPara1%></li><li><%= div3List2RightPara2%></li><li><%= div3List2RightPara3%></li></ul></p>
           </div>
         </div>
       </div>
@@ -201,14 +201,14 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>February 2020 - Present</p>
-            <div class="h5">Notchup</div>
+            <p><%= div3List3LeftDate%></p>
+            <div class="h5"><%= div3List3LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Curriculum Developer,Intern</div>
-            <p><ul><li>I am Working as a curriculum developer.</li><li>      Currently working on python.</li></ul></p>
+            <div class="h5"><%= div3List3RightHeading%></div>
+            <p><ul><li><%= div3List3RightPara1%></li><li><%= div3List3RightPara2%></li><li><%= div3List1RightPara3%></li></ul></p>
           </div>
         </div>
       </div>
@@ -217,22 +217,22 @@
 </div>
 <div class="section" id="education">
   <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Education</div>
+    <div class="h4 text-center mb-4 title"><%= div4Heading%></div>
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2017 - present</p>
-            <div class="h5">Bachelor's Degree</div>
+            <p><%= div4List1LeftDate%></p>
+            <div class="h5"><%= div4List1LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Bachelor of Technology in Computer Science and Engineering</div>
-            <p><b>CGPA : 8.0</b></p>
-            <p class="category">Amritsar Group of Colleges,Amritsar</p>
-            <p><ul><li>I am a third-year Undergraduate pursuing B.Tech from Amritsar Group of Colleges,Amritsar.</li>
-              <li>Major Courses : Data Structure and Algorithms, DBMS, Machine Learning, Operating System.</li></ul></p>
+            <div class="h5"><%= div4List1RightHeading1%></div>
+            <!-- <p><b>CGPA : 8.0</b></p> -->
+            <p class="category"><%= div4List1RightHeading2%></p>
+            <p><ul><li><%= div4List1RightPara1%></li>
+              <li><%= div4List1RightPara2%></li></ul></p>
           </div>
         </div>
       </div>
@@ -241,16 +241,17 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2014 - 2016</p>
-            <div class="h5">High School</div>
+            <p><%= div4List2LeftDate%></p>
+            <div class="h5"><%= div4List2LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Class 12th,WBCHSE</div>
-            <p><b>PERCENTAGE : 84%</b></p>
-            <p class="category">Shree Jain Vidyalaya</p>
-            <p><ul><li>Basic Subjects-Physics,Chemistry,Mathematics,computer science</li></ul></p>
+            <div class="h5"><%= div4List2RightHeading1%></div>
+            <!-- <p><b>CGPA : 8.0</b></p> -->
+            <p class="category"><%= div4List2RightHeading2%></p>
+            <p><ul><li><%= div4List2RightPara1%></li>
+              <li><%= div4List2RightPara2%></li></ul></p>
           </div>
         </div>
       </div>
@@ -259,7 +260,7 @@
 </div>
 <div class="section" id="project" tabindex="-1">
   <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Projects</div>
+    <div class="h4 text-center mb-4 title"><%= div5Heading%></div>
     <!-- <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary aos-init" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -285,100 +286,92 @@
       <div class="row">
         <div class="col-md-3 bg-primary aos-init aos-animate" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <div class="h5">Third Eye keylogger</div>
+            <div class="h5"><%= div5List1LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9 aos-init aos-animate" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Third Eye keylogger</div>
-            <div class="h6">Tools & Technology used :Python pynput & datetime module,file handling </div>
+            <div class="h5"><%= div5List1RightHeading%></div>
             <ul>
-              <li>A keylogger that is made for educational purpose with the help of python.</li>
-              <li>For storing all the data python file handling is being used.</li>
-              <li><a href="https://github.com/rohit679/Third-Entry-Keylogger">Check out the project.</a></li>
+              <li><%= div5List1RightPara1%></li>
+              <li><%= div5List1RightPara2%></li>
+              <li><a href="<%= div5List1Link%>"><%= div5List1RightPara3%></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary aos-init aos-animate" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <div class="h5">Explore world</div>
+            <div class="h5"><%= div5List2LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9 aos-init aos-animate" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Explore world</div>
-            <div class="h6">Tools & Technology used :HTML,CSS,JAVASCRIPT,PHP,BOOTSTRAP </div>
+            <div class="h5"><%= div5List2RightHeading%></div>
             <ul>
-              <li>Explore world is a web development project, that let an individual to the various facts and figures of well known cities.</li>
-              <li>Php is being used for storing the user data, that they leave at the contact section.</li>
-              <li><a href="https://github.com/rohit679/Visit-world-web-development-project">Check out the project.</a></li>
+              <li><%= div5List2RightPara1%></li>
+              <li><%= div5List2RightPara2%></li>
+              <li><a href="<%= div5List2Link%>"><%= div5List2RightPara3%></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary aos-init aos-animate" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <div class="h5">Library Management System</div>
+            <div class="h5"><%= div5List3LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9 aos-init aos-animate" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Library Management System</div>
-            <div class="h6">Tools & Technology used :Python, Mysql,os,sys,linux </div>
+            <div class="h5"><%= div5List3RightHeading%></div>
             <ul>
-              <li>Built the command based Library management system in linux.</li>
-              <li>Mysql is used for backend.</li>
+              <li><%= div5List3RightPara1%></li>
+              <li><%= div5List3RightPara2%></li>
+              <li><a href="<%= div5List3Link%>"><%= div5List3RightPara3%></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
     <div class="card">
       <div class="row">
-        <div class="col-md-3 bg-primary aos-init" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+        <div class="col-md-3 bg-primary aos-init aos-animate" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <div class="h5">Student Database Management System</div>
+            <div class="h5"><%= div5List4LeftHeading%></div>
           </div>
         </div>
-        <div class="col-md-9 aos-init" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+        <div class="col-md-9 aos-init aos-animate" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Student Database Management System,C++</a>  </div>
-            <div class="h6">Tools & Technology used : c++,oops,file handling</div>
+            <div class="h5"><%= div5List4RightHeading%></div>
             <ul>
-              <li> It is a c++ console based project,my first ever oops implemented project.</li>
-              <li> Used File handling for storing project related data.</li>
-              <li><a href="https://github.com/rohit679/Student-database-management-system">Check out the project.</a></li>
+              <li><%= div5List4RightPara1%></li>
+              <li><%= div5List4RightPara2%></li>
+              <li><a href="<%= div5List4Link%>"><%= div5List4RightPara3%></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
     <div class="card">
       <div class="row">
-        <div class="col-md-3 bg-primary aos-init" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+        <div class="col-md-3 bg-primary aos-init aos-animate" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <div class="h5">Predictive Cricket</div>
+            <div class="h5"><%= div5List5LeftHeading%></div>
           </div>
         </div>
-        <div class="col-md-9 aos-init" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+        <div class="col-md-9 aos-init aos-animate" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Predictive Cricket,python</div>
-            <div class="h6">Tools & Technology used : python,random and os module,file handling </div>
+            <div class="h5"><%= div5List5RightHeading%></div>
             <ul>
-              <li>Predictive Cricket is a console based project which uses random and os module.</li>
-              <li>Python file handling used for storing high score.</li>
-              <li><a href="https://github.com/rohit679/Predictive-Cricket">Check out the project</a></li>
+              <li><%= div5List5RightPara1%></li>
+              <li><%= div5List5RightPara2%></li>
+              <li><a href="<%= div5List5Link%>"><%= div5List5RightPara3%></a></li>
             </ul>
           </div>
         </div>
@@ -387,21 +380,23 @@
 
 <div class="section" id="Achievements">
   <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Achievements</div>
+    <div class="h4 text-center mb-4 title"><%= div6Heading%></div>
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>September,2019</p>
-            <div class="h5">Published Article</div>
+            <p><%= div6List1LeftDate%></p>
+            <div class="h5"><%= div6List1LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">How Namenode handles datanode failure</div>
-            <p><b>GeeksgorGeeks</b></p>
-            <p><ul><li>This article is based on Distributed file system,Hadoop.</li><li>After learning from number of sources, I have written this concisely.</li>
-              <li>Link:<a href="https://www.geeksforgeeks.org/how-does-namenode-handles-datanode-failure-in-hadoop-distributed-file-system/amp/">See my aritcle</a></li></ul></p>
+            <div class="h5"><%= div6List1RightHeading1%></div>
+            <p class="category"><%= div6List1RightHeading2%></p>
+            <p><ul>
+              <li><%= div6List1RightPara1%></li>
+              <li><%= div6List1RightPara2%></li>
+            </ul></p>
           </div>
         </div>
       </div>
@@ -410,15 +405,18 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2018</p>
-            <div class="h5">Best Trainee</div>
+            <p><%= div6List2LeftDate%></p>
+            <div class="h5"><%= div6List2LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Best trainee in the batch</div>
-            <p class="category">Amritsar Group of Colleges</p>
-            <p><ul><li>I was selected among top 10 best trainee in the batch.</li><li>It was a summer training program of two weeks by our college.</li></ul></p>
+            <div class="h5"><%= div6List2RightHeading1%></div>
+            <p class="category"><%= div6List2RightHeading2%></p>
+            <p><ul>
+              <li><%= div6List2RightPara1%></li>
+              <li><%= div6List2RightPara2%></li>
+            </ul></p>
           </div>
         </div>
       </div>
@@ -427,16 +425,18 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2017</p>
-            <div class="h5">Jee Advance</div>
+            <p><%= div6List3LeftDate%></p>
+            <div class="h5"><%= div6List3LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Jee Advance Qualified</div>
-            <p><b>Marks : 93</b></p>
-            <p><ul><li>I was prepared for jee Advance in mento classes,patna.</li>
-              <li>Major Subjects:Physics,Chemistry,Maths</li></ul></p>
+            <div class="h5"><%= div6List3RightHeading1%></div>
+            <p class="category"><%= div6List3RightHeading2%></p>
+            <p><ul>
+              <li><%= div6List3RightPara1%></li>
+              <li><%= div6List3RightPara2%></li>
+            </ul></p>
           </div>
         </div>
       </div>
@@ -445,16 +445,18 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2017</p>
-            <div class="h5">Jee Advance</div>
+            <p><%= div6List4LeftDate%></p>
+            <div class="h5"><%= div6List4LeftHeading%></div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Jee Advance Qualified</div>
-            <p><b>Marks : 93</b></p>
-            <p><ul><li>I was prepared for jee Advance in mento classes,patna.</li>
-              <li>Major Subjects:Physics,Chemistry,Maths</li></ul></p>
+            <div class="h5"><%= div6List4RightHeading1%></div>
+            <p class="category"><%= div6List4RightHeading2%></p>
+            <p><ul>
+              <li><%= div6List4RightPara1%></li>
+              <li><%= div6List4RightPara2%></li>
+            </ul></p>
           </div>
         </div>
       </div>
@@ -470,12 +472,12 @@
         <div class="row">
           <div class="col-md-9">
             <div class="card mb-0" data-aos="zoom-in">
-              <div class="h4 text-center title">Contact Me</div>
+              <div class="h4 text-center title"><%= div7Heading%></div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
                     <form action="https://formspree.io/your@email.com" method="POST">
-                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                      <div class="p pb-3"><strong><%= div7SubHeading%></strong></div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
@@ -506,7 +508,7 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
+                          <button class="btn btn-primary" type="submit"><%= div7ButtonText%></button>
                         </div>
                       </div>
                     </form>
@@ -514,10 +516,10 @@
                 </div>
                 <div class="col-md-6">
                   <div class="card-body">
-                    <p class="mb-0"><strong>Phone</strong></p>
-                    <p class="pb-2">+91 9123746914</p>
-                    <p class="mb-0"><strong>Email</strong></p>
-                    <p>rohitprasad25061999@gmail.com</p>
+                    <p class="mb-0"><strong><%= div7List1Heading%></strong></p>
+                    <p class="pb-2"><%= div7List1Value%></p>
+                    <p class="mb-0"><strong><%= div7List2Heading%></strong></p>
+                    <p><%= div7List2Value%></p>
                   </div>
                 </div>
               </div>
@@ -533,7 +535,7 @@
       <!-- <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
       <div class="h4 title text-center">Rohit Prasad</div> -->
       <div class="text-center text-muted">
-        <p>&copy; Rohit Prasad All rights reserved.</p>
+        <p>&copy; <%= div8CopyrightHeading%></p>
       </div>
     </footer>
     <script src="js/core/jquery.3.2.1.min.js"></script>
