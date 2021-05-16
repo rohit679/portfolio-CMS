@@ -12,7 +12,6 @@ contentModule.init(app);
 
 app.get('/',httpHandler(async (req, res, next) => { 
     const data = await contentServices.servePage();
-    console.log(data);
     res.render('index',data);
 }));
 
