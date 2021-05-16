@@ -11,9 +11,9 @@ const app = createAnApp();
 contentModule.init(app);
 
 app.get('/',httpHandler(async (req, res, next) => { 
-    const promises = await contentServices.servePage();
-    console.log(promises);
-    res.render('index',promises);
+    const data = await contentServices.servePage();
+    console.log(data);
+    res.render('index',data);
 }));
 
 finishApp(app);

@@ -17,7 +17,7 @@ contentServices.servePage = async () => {
 
 contentServices.addContent = async (data) => await contentModel.create(data);
 
-contentServices.updateContent = async ({id, data}) => await contentModel.findByIdAndUpdate(id, data);
+contentServices.updateContent = async ({id, data}) => await contentModel.findOneAndUpdate({element_id : id}, data);
 
 contentServices.deleteContent = async (id) => await contentModel.findByIdAndDelete(id);
 

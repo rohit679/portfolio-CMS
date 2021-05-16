@@ -21,6 +21,14 @@ router.get(
     })
 );
 
+router.get(
+    '/get-data',
+    httpHandler(async (req, res) => {
+        const data = await contentServices.servePage();
+        res.send(data);
+    })
+);
+
 router.post(
     '/add-content',
     httpHandler(async (req, res) => {
