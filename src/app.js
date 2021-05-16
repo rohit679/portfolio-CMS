@@ -10,7 +10,7 @@ export const createAnApp = () => {
     app.use(express.json());
     app.use(bodyParser.urlencoded({extended : true}));
     app.use(cors({
-        origin : 'https://rohit-prasad-portfolio.herokuapp.com',
+        origin : 'http://rohit-prasad-portfolio.herokuapp.com',
         optionsSuccessStatus : 200,
         method : 'GET, PUT, DELETE, POST'
     }));
