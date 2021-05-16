@@ -4,7 +4,7 @@ import './modules/db/connection';
 import contentModule from './modules/contents';
 import contentServices from './modules/contents/services';
 
-const PORT = 8000;
+const PORT = process.env.PORT;
 
 const app = createAnApp();
 
