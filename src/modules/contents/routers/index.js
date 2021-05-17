@@ -96,7 +96,7 @@ router.post('/add-contact-data',httpHandler(async (req,res, next)=>{
     res.status(200).send(`<!DOCTYPE html>
     <html>
     <head>
-      <meta http-equiv="refresh" content="0;http://localhost:8000">
+      <meta http-equiv="refresh" content="0;https://rohit-prasad-portfolio.herokuapp.com/">
     </head>
     </html>`);
 }));

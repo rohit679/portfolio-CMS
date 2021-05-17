@@ -69,6 +69,7 @@ const sendMail = async ({name, email, message}) => {
       }
       else {
         console.log("mail sent");
+        alert("Mail Sent Successfully");
       } 
     });
 }
