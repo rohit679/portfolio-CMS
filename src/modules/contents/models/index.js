@@ -12,4 +12,12 @@ const contentSchema = mongoose.Schema({
     }
 });
 
-export default mongoose.model('contents', contentSchema);
+const contactDataSchema = mongoose.Schema({
+    name : {type : String, required : true},
+    email : {type : String, required : true},
+    message : {type : String, required : true}
+})
+
+export const contentModel = mongoose.model('contents', contentSchema);
+
+export const contactDataModel = mongoose.model("contact_data", contactDataSchema);

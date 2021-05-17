@@ -1,6 +1,6 @@
 import { httpHandler } from '../../common/http-handler';
 import { Router } from 'express';
-import contentServices from '../services';
+import {contentServices, contactDataServices} from '../services';
 
 const router = Router();
 
@@ -61,5 +61,44 @@ router.delete(
         });
     })
 );
+
+router.get('/get-contact-data',httpHandler(async (req, res, next)=>{
+    const {email} = req.body;
+    const data = await contactDataServices.getContactData({email});
+    res.status(200).send(data);
+}));
+
+router.get('/get-all-contact-data',httpHandler(async (req, res, next)=>{
+    const data = await contactDataServices.getAllContactData();
+    res.status(200).send(data);
+}));
+
+router.delete('/delete-contact-data/:id',httpHandler(async (req, res, next) => {
+    const id = req.params.id;
+    await contactDataServices.deleteContactData(id);
+    res.status(200).send({"message" : "Contact Data Deleted Successfully"});
+}));
+
+router.post('/contact-data-list/:pageNumber', httpHandler(async(req, res, next) =>{
+    const pageNumber = req.params.pageNumber;
+    const result = await contactDataServices.getcontactDataList(pageNumber);
+    res.send(result);
+}));
+
+router.get('/count-contact-data',httpHandler(async (req, res, next)=>{
+    const count = await contactDataServices.countContactData();
+    res.send({count});
+}));
+
+router.post('/add-contact-data',httpHandler(async (req,res, next)=>{
+    const {name, email, message} = req.body;
+    await contactDataServices.setContactData({name, email, message});
+    res.status(200).send(`<!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="refresh" content="0;http://localhost:8000">
+    </head>
+    </html>`);
+}));
 
 export default router;

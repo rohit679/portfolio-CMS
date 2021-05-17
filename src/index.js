@@ -2,9 +2,9 @@ import { createAnApp, finishApp } from './app';
 import { httpHandler } from './modules/common/http-handler';
 import './modules/db/connection';
 import contentModule from './modules/contents';
-import contentServices from './modules/contents/services';
+import {contentServices} from './modules/contents/services';
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 const app = createAnApp();
 
@@ -12,6 +12,7 @@ contentModule.init(app);
 
 app.get('/',httpHandler(async (req, res, next) => { 
     const data = await contentServices.servePage();
+    // console.log(data);
     res.render('index',data);
 }));
 
