@@ -10,9 +10,10 @@ export const createAnApp = () => {
     app.use(express.json());
     app.use(bodyParser.urlencoded({extended : true}));
     app.use(cors({
-        origin : 'https://rohit-portfolio-dashboard.herokuapp.com',
+        origin : 'http://rohit-portfolio-dashboard.herokuapp.com',
         optionsSuccessStatus : 200,
-        method : 'GET, PUT, DELETE, POST'
+        method : 'GET, PUT, DELETE, POST',
+        credentials : true,
     }));
     app.use(express.static(__dirname + '/public'));
     app.set('views', path.join(__dirname, './views'));
