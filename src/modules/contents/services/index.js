@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import keys from '../../../config/keys';
 import { contentModel, contactDataModel } from '../models';
 
 const getAllContents = async () => await contentModel.find({});
@@ -54,7 +55,7 @@ const sendMail = async ({name, email, message}) => {
       service: 'gmail',
       auth: {
         user: 'rohit.prasad@plaxonic.com',
-        pass: 'Rohit@9897'
+        pass: keys.mailPassword
       }
     });
     var mailOptions = {

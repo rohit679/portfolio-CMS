@@ -1,10 +1,9 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-// const URL = 'mongodb://localhost/portfolio';
-const URL = "mongodb+srv://rohit:sjsVdQqfNK36icXJ@cluster0.ukw3x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mongoURL = 'mongodb://localhost/portfolio';
 (async () => {
     try {
-        await mongoose.connect(URL, {
+        await mongoose.connect(mongoURL, {
             useNewUrlParser:true,
             useCreateIndex:true,
             useFindAndModify:false,

@@ -2,11 +2,14 @@ import { createAnApp, finishApp } from './app';
 import { httpHandler } from './modules/common/http-handler';
 import './modules/db/connection';
 import contentModule from './modules/contents';
+import authModule from './modules/auth';
 import {contentServices} from './modules/contents/services';
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
 const app = createAnApp();
+
+authModule.init(app);
 
 contentModule.init(app);
 
