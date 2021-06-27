@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
-
-const mongoURL = 'mongodb://localhost/portfolio';
+import { mongoURL } from './keys';
 (async () => {
     try {
         await mongoose.connect(mongoURL, {

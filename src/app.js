@@ -10,7 +10,7 @@ export const createAnApp = () => {
     app.use(express.json());
     app.use(bodyParser.urlencoded({extended : true}));
     app.use(cors({
-        origin : 'https://rohit-portfolio-dashboard.herokuapp.com',
+        origin : 'http://localhost:3000',
         optionsSuccessStatus : 200,
         method : 'GET, PUT, DELETE, POST',
         credentials : true,
