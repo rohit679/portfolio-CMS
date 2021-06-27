@@ -1,11 +1,11 @@
 import { createAnApp, finishApp } from './app';
-import { httpHandler } from './modules/common/http-handler';
-import './modules/db/connection';
+import { httpHandler } from './config/http-handler';
+import './config/connection';
 import contentModule from './modules/contents';
 import authModule from './modules/auth';
 import {contentServices} from './modules/contents/services';
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 const app = createAnApp();
 
@@ -15,7 +15,6 @@ contentModule.init(app);
 
 app.get('/',httpHandler(async (req, res, next) => { 
     const data = await contentServices.servePage();
-    // console.log(data);
     res.render('index',data);
 }));
 

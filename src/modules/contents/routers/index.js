@@ -1,4 +1,4 @@
-import { httpHandler } from '../../common/http-handler';
+import { httpHandler } from '../../../config/http-handler';
 import { Router } from 'express';
 import {contentServices, contactDataServices} from '../services';
 

@@ -1,5 +1,5 @@
 import passport from "passport";
-import { httpHandler } from '../../common/http-handler';
+import { httpHandler } from '../../../config/http-handler';
 import authServices from '../service';
 import {Router} from "express";
 require('../../../config/Passport')(passport);
